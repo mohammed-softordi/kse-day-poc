@@ -10,10 +10,18 @@
       :host {
         display: inline-block;
       }
+      iron-icon {
+        fill: rgba(0,0,0,0);
+        stroke: currentcolor;
+      }
+      :host([pressed]) iron-icon {
+        fill: currentcolor;
+      }
     </style>
 
     <!-- shadow DOM goes here -->
-    <span>Not much here yet.</span>
+    <iron-icon icon="[[toggleIcon]]" on-click="toggle">
+    </iron-icon>
   </template>
 
   <script>
@@ -21,8 +29,24 @@
       static get is() {
         return 'icon-toggle';
       }
+      static get properties() {
+        return {
+          pressed: {
+            type: Boolean,
+            notify: true,
+            reflectToAttribute: true,
+            value: false
+          },
+          toggleIcon: {
+            type: String
+          },
+        }
+      }
       constructor() {
         super();
+      }
+      toggle() {
+        this.pressed = !this.pressed;
       }
     }
     customElements.define(IconToggle.is, IconToggle);
