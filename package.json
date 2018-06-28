@@ -1,0 +1,19 @@
+{
+  "name": "kse-common-icon",
+  "license": "MIT",
+  "version": "1.0.1",
+  "dependencies": {
+    "@polymer/polymer": "2.0.0",
+    "@polymer/iron-icon": "3.0.0-pre.21",
+    "@polymer/iron-icons": "3.0.0-pre.21"
+  },
+  "authors": [
+    "Scania",
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/github.com/mohammed-softordi/kse-day-poc.git"
+  },
+  "homepage": "https://github.com/mohammed-softordi/kse-day-poc"
+}

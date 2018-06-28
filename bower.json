@@ -1,6 +1,6 @@
 {
-  "name": "icon-toggle",
-  "version": "1.0.0",
+  "name": "kse-common-icon",
+  "version": "1.0.1",
   "homepage": "https://github.com/mohammed-softordi/kse-day-poc",
   "license": "MIT",
   "ignore": [
